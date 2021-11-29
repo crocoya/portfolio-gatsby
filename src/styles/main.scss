@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  /* ===== Font weight ===== */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  /* ===== Colors ===== */
+  --dark: #001514;
+  --white: #fbfffe;
+  --slate: #a3a4a6;
+  --blood-red: #6b0604;
+  --chinese-red: #a3320b;
+  --goldenrod: #e6af2e;
+  /* ===== Font and typography ===== */
+  --body-font: 'Poppins', sans-serif;
+  --h1-fz: 1.5rem;
+  --h2-fz: 1.25rem;
+  --h3-fz: 1rem;
+  --normal-fz: 0.938rem;
+  --small-fz: 0.813rem;
+  --smaller-fz: 0.75rem;
+  /* ===== Margenes ===== */
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  /* ===== z index ===== */
+  --z-fixed: 100;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-fz);
+  font-weight: var(--font-normal);
+  background-color: var(--dark);
+  color: var(--slate);
+}
+
+main {
+  margin: 100px auto;
+  width: 100%;
+  max-width: 1280px;
+  min-height: 100vh;
+  padding: 0px 150px;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

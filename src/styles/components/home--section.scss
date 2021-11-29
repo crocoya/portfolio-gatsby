@@ -1,0 +1,54 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.3;
+
+  &--presentation {
+    font-size: clamp(var(--small-fz), 5vw, var(--normal-fz));
+  }
+
+  &--name {
+    color: var(--blood-red);
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: var(--font-bold);
+  }
+
+  &--job {
+    color: var(--goldenrod);
+    font-size: clamp(40px, 8vw, 80px);
+  }
+
+  &--post {
+    font-size: var(--normal-fz);
+    max-width: 540px;
+
+    span {
+      color: var(--goldenrod);
+      transition: all 0.25s;
+
+      &:hover {
+        transition: all 1s;
+        text-decoration: underline;
+        cursor: default;
+      }
+    }
+  }
+
+  &--cv {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: var(--goldenrod);
+    font-weight: var(--font-semi-bold);
+    margin: 30px 0;
+    transition: 0.25s;
+
+    &:hover {
+      background-color: #a3a4a652;
+    }
+  }
+}

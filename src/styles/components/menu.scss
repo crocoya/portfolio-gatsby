@@ -21,7 +21,7 @@
       margin: 0 10px;
 
       span {
-        color: var(--white);
+        color: var(--slate);
       }
     }
   }
@@ -35,7 +35,6 @@
   }
 
   &--links {
-    color: var(--white);
     font-size: var(--normal-fz);
     transition: all 0.25s ease-in;
 

@@ -19,6 +19,7 @@ const ContactSection = () => {
           <Grid container spacing={2}>
             <Grid item xs={12} sm={4}>
               <TextField
+                className='text-input'
                 variant='outlined'
                 margin='normal'
                 id='name'
@@ -30,6 +31,7 @@ const ContactSection = () => {
 
             <Grid item xs={12} sm={4}>
               <TextField
+                className='text-input'
                 variant='outlined'
                 margin='normal'
                 id='email'
@@ -42,6 +44,7 @@ const ContactSection = () => {
 
             <Grid item xs={12} sm={4}>
               <TextField
+                className='text-input'
                 variant='outlined'
                 margin='normal'
                 id='subject'
@@ -54,6 +57,7 @@ const ContactSection = () => {
 
             <Grid item xs={12}>
               <TextField
+                className='text-input'
                 variant='outlined'
                 margin='normal'
                 id='message'

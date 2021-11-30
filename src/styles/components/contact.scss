@@ -10,6 +10,10 @@
     padding: 50px;
     margin: 50px 0px 0px;
 
+    .MuiOutlinedInput-input {
+      color: var(--slate);
+    }
+
     label {
       color: var(--goldenrod) !important;
     }

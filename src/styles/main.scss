@@ -53,9 +53,10 @@ body {
 main {
   margin: 0px auto;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1600px;
   min-height: 100vh;
   padding: 0px 150px;
+  counter-reset: section 0;
 }
 
 section {

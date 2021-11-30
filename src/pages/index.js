@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout/layout';
 import AboutSection from '../components/organisms/about--section';
+import ContactSection from '../components/organisms/contact--section';
 import HomeSection from '../components/organisms/home--section';
 import ProjectsSection from '../components/organisms/projects--section';
 
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <HomeSection />
       <AboutSection />
       <ProjectsSection />
+      <ContactSection />
     </Layout>
   );
 };

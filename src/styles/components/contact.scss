@@ -1,0 +1,26 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--grid {
+    text-align: center;
+    background-color: var(--navy-light);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 50px 0px 0px;
+
+    label {
+      color: var(--goldenrod) !important;
+    }
+    .Mui-focused fieldset {
+      border-color: var(--goldenrod) !important;
+    }
+
+    .contact--button {
+      margin-top: 45px;
+      background-color: var(--goldenrod);
+      color: var(--navy-light);
+    }
+  }
+}

@@ -18,9 +18,14 @@
         a {
           padding: 10px;
 
-          &:hover {
-            color: var(--goldenrod);
-            transform: scale(1.05);
+          svg {
+            width: 20px;
+            height: 20px;
+
+            &:hover {
+              color: var(--goldenrod);
+              transform: scale(1.05);
+            }
           }
         }
       }

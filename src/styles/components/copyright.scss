@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 100px;
+  padding: 15px;
+  text-align: center;
+
+  &--mobile {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        a {
+          padding: 10px;
+
+          &:hover {
+            color: var(--goldenrod);
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+
+  &--credit:hover {
+    color: var(--goldenrod);
+  }
+}

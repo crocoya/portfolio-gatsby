@@ -1,19 +1,7 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import {
-  CssSvg,
-  FirebaseSvg,
-  GatsbySvg,
-  GithubSvg,
-  GitlabSvg,
-  GitSvg,
-  HtmlSvg,
-  JavascriptSvg,
-  MysqlSvg,
-  ReactSvg,
-  VscodeSvg,
-  SassSvg,
-} from '../data/svgItems';
+
+import { ToolboxItems } from '../data/svgItems';
 
 const AboutSection = () => {
   return (
@@ -57,78 +45,12 @@ const AboutSection = () => {
         <h2 className='subtitle'>My Toolbox</h2>
         <div className='toolbox--container'>
           <ul>
-            <li>
-              <div>
-                <HtmlSvg />
-              </div>
-              <span>HTML</span>
-            </li>
-            <li>
-              <div>
-                <CssSvg />
-              </div>
-              <span>CSS 3</span>
-            </li>
-            <li>
-              <div>
-                <JavascriptSvg />
-              </div>
-              <span>JavaScript</span>
-            </li>
-            <li>
-              <div>
-                <ReactSvg />
-              </div>
-              <span>React</span>
-            </li>
-            <li>
-              <div>
-                <GatsbySvg />
-              </div>
-              <span>Gatsby</span>
-            </li>
-            <li>
-              <div>
-                <FirebaseSvg />
-              </div>
-              <span>Firebase</span>
-            </li>
-            <li>
-              <div>
-                <MysqlSvg />
-              </div>
-              <span>MySQL</span>
-            </li>
-            <li>
-              <div>
-                <GitSvg />
-              </div>
-              <span>Git</span>
-            </li>
-            <li>
-              <div>
-                <GithubSvg />
-              </div>
-              <span>Github</span>
-            </li>
-            <li>
-              <div>
-                <GitlabSvg />
-              </div>
-              <span>Gitlab</span>
-            </li>
-            <li>
-              <div>
-                <VscodeSvg />
-              </div>
-              <span>Vs Code</span>
-            </li>
-            <li>
-              <div>
-                <SassSvg />
-              </div>
-              <span>Sass</span>
-            </li>
+            {ToolboxItems.map((item, i) => (
+              <li key={i}>
+                <div>{item.icon}</div>
+                <span>{item.title}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

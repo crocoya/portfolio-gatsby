@@ -198,3 +198,54 @@ export const SassSvg = () => {
     </svg>
   );
 };
+
+export const ToolboxItems = [
+  {
+    icon: <HtmlSvg />,
+    title: 'HTML',
+  },
+  {
+    icon: <CssSvg />,
+    title: 'CSS',
+  },
+  {
+    icon: <JavascriptSvg />,
+    title: 'JavaScript',
+  },
+  {
+    icon: <ReactSvg />,
+    title: 'React',
+  },
+  {
+    icon: <GatsbySvg />,
+    title: 'Gatsby',
+  },
+  {
+    icon: <FirebaseSvg />,
+    title: 'Firebase',
+  },
+  {
+    icon: <MysqlSvg />,
+    title: 'MySQL',
+  },
+  {
+    icon: <GitSvg />,
+    title: 'Git',
+  },
+  {
+    icon: <GithubSvg />,
+    title: 'Github',
+  },
+  {
+    icon: <GitlabSvg />,
+    title: 'Gitlab',
+  },
+  {
+    icon: <VscodeSvg />,
+    title: 'Vs Code',
+  },
+  {
+    icon: <SassSvg />,
+    title: 'Sass',
+  },
+];

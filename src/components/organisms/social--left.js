@@ -8,12 +8,16 @@ const SocialLeft = () => {
     <div orientation='left' className='social--left'>
       <ul className='social--list'>
         <li className='social--items'>
-          <a href='https://github.com/crocoya'>
+          <a href='https://github.com/crocoya' target='_blank' rel='noreferrer'>
             <FiGithub />
           </a>
         </li>
         <li className='social--items'>
-          <a href='https://www.linkedin.com/in/yassine-tababi/'>
+          <a
+            href='https://www.linkedin.com/in/yassine-tababi/'
+            target='_blank'
+            rel='noreferrer'
+          >
             <FiLinkedin />
           </a>
         </li>

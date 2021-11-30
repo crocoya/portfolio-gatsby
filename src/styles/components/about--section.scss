@@ -1,0 +1,116 @@
+.about {
+  &--heading {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 10px 0px 40px;
+    white-space: nowrap;
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: 0px;
+      width: 300px;
+      height: 1px;
+      margin-left: 20px;
+      background-color: var(--slate);
+    }
+  }
+
+  &--inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+
+    .about--text {
+      p {
+        margin: 20px 0;
+        line-height: 1.5;
+
+        a {
+          color: var(--goldenrod);
+          font-weight: var(--font-medium);
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .about--pic {
+      position: relative;
+      max-width: 300px;
+
+      .wrapper {
+        box-shadow: 0 15px 30px -15px var(--goldenrod);
+        transition: all 0.25s;
+        display: block;
+        position: relative;
+        width: 100%;
+        border-radius: 22px;
+        background-color: transparent;
+
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  &--skills {
+    margin-top: 50px;
+
+    .subtitle {
+      text-align: center;
+      font-size: var(--h2-fz);
+    }
+
+    .toolbox--container {
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+          background-color: #022220;
+          border-radius: 0.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          height: 7rem;
+          margin: 0.5rem;
+          padding: 1rem;
+          width: 7rem;
+          transition: var(--transition);
+
+          &:hover {
+            transform: scale(1.1);
+            transition: var(--transition);
+          }
+
+          div {
+            width: 2rem;
+            height: 2rem;
+
+            svg {
+              fill: var(--goldenrod);
+            }
+          }
+
+          span {
+            display: block;
+            font-weight: var(--font-bold);
+            margin-bottom: 0.25rem;
+            margin-top: 0.75rem;
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+}

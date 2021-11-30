@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout/layout';
+import AboutSection from '../components/organisms/about--section';
 import HomeSection from '../components/organisms/home--section';
 
 // import style
@@ -9,6 +10,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <HomeSection />
+      <AboutSection />
     </Layout>
   );
 };

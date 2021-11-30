@@ -42,10 +42,11 @@
 
     .about--pic {
       position: relative;
-      max-width: 300px;
+      max-width: 380px;
+      max-height: 270px;
 
       .wrapper {
-        box-shadow: 0 15px 30px -15px var(--goldenrod);
+        box-shadow: 0 0 20px 5px var(--goldenrod);
         transition: all 0.25s;
         display: block;
         position: relative;
@@ -74,9 +75,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 50px 0px 0px;
 
         li {
-          background-color: #022220;
+          background-color: var(--navy-light);
           border-radius: 0.5rem;
           display: flex;
           flex-direction: column;

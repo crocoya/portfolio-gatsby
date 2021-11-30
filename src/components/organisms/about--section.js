@@ -12,6 +12,7 @@ import {
   MysqlSvg,
   ReactSvg,
   VscodeSvg,
+  SassSvg,
 } from '../data/svgItems';
 
 const AboutSection = () => {
@@ -44,10 +45,10 @@ const AboutSection = () => {
         <div className='about--pic'>
           <div className='wrapper'>
             <StaticImage
-              src='../../images/profil-yassine.png'
+              src='../../images/about-prog.svg'
               alt='my profil'
-              width={300}
-              height={300}
+              width={380}
+              height={270}
             />
           </div>
         </div>
@@ -121,6 +122,12 @@ const AboutSection = () => {
                 <VscodeSvg />
               </div>
               <span>Vs Code</span>
+            </li>
+            <li>
+              <div>
+                <SassSvg />
+              </div>
+              <span>Sass</span>
             </li>
           </ul>
         </div>

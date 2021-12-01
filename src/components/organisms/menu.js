@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import anime from 'animejs';
 
 // import icons
 import { FaLaptopCode } from 'react-icons/fa';
@@ -11,12 +12,34 @@ import { MenuItems } from '../data/menuItems';
 export default function Menu() {
   const [open, setOpen] = React.useState(false);
 
-  const handleClick = () => {
-    setOpen(!open);
+  const handleAnime = (e) => {
+    e.preventDefault();
+
+    const link = new URL(e.target.href);
+    const targetElement = document.querySelector(link.hash);
+    const targetPosition = targetElement.getBoundingClientRect();
+    const targetY = targetPosition.y;
+    const scrollPosition = targetY + window.scrollY;
+
+    let animeObjPosition = {
+      newY: window.scrollY,
+    };
+
+    anime({
+      targets: animeObjPosition,
+      newY: scrollPosition,
+      easing: 'easeInOutQuart',
+      duration: 2000,
+      round: 1,
+      update: function () {
+        window.scrollTo(0, animeObjPosition.newY);
+      },
+    });
+    setOpen(false);
   };
 
-  const closeMenu = () => {
-    setOpen(false);
+  const handleClick = () => {
+    setOpen(!open);
   };
 
   return (
@@ -30,7 +53,7 @@ export default function Menu() {
       <ul className={open ? 'nav--links active' : 'nav--links'}>
         {MenuItems.map((item, i) => (
           <li key={i} className='nav--items'>
-            <Link to={item.url} className={item.cName} onClick={closeMenu}>
+            <Link to={item.url} className={item.cName} onClick={handleAnime}>
               {item.title}
             </Link>
           </li>

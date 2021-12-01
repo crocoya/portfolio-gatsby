@@ -3,7 +3,7 @@ import { Button, Container, Grid, TextField, Typography } from '@mui/material';
 
 const ContactSection = () => {
   return (
-    <section className='contact container'>
+    <section className='contact container' id='contact'>
       <h2 className='contact--heading'>Contact</h2>
       <Container className='contact--grid'>
         <Typography variant='h6'>Say Hello !</Typography>

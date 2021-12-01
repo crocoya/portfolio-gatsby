@@ -57,6 +57,14 @@ main {
   min-height: 100vh;
   padding: 0px 150px;
   counter-reset: section 0;
+
+  @media screen and (max-width: 1080px) {
+    padding: 0px 100px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0px 50px;
+  }
 }
 
 section {

@@ -9,6 +9,7 @@
   text-align: center;
 
   &--mobile {
+    display: none;
     ul {
       display: flex;
       justify-content: space-between;
@@ -29,6 +30,9 @@
           }
         }
       }
+    }
+    @media screen and (max-width: 768px) {
+      display: block;
     }
   }
 

@@ -37,6 +37,9 @@
       background-color: var(--slate);
     }
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .social--right {
@@ -78,5 +81,8 @@
       margin: 0px auto;
       background-color: var(--slate);
     }
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }

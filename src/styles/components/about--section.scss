@@ -1,11 +1,23 @@
 .about {
   &--heading {
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
     width: 100%;
     margin: 10px 0px 40px;
     white-space: nowrap;
+
+    &::before {
+      content: '';
+      display: block;
+      position: relative;
+      top: 0px;
+      width: 300px;
+      height: 1px;
+      margin-right: 20px;
+      background-color: var(--slate);
+    }
 
     &::after {
       content: '';
@@ -20,14 +32,19 @@
   }
 
   &--inner {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
 
     .about--text {
       p {
         margin: 20px 0;
         line-height: 1.5;
+        max-width: 500px;
+        min-width: 300px;
 
         a {
           color: var(--goldenrod);
@@ -42,21 +59,18 @@
 
     .about--pic {
       position: relative;
-      max-width: 380px;
-      max-height: 270px;
+      max-width: 300px;
+      padding-top: 1.3rem;
+      padding-left: 0.3rem;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      box-shadow: 0 0 20px 5px var(--goldenrod);
 
-      .wrapper {
-        box-shadow: 0 0 20px 5px var(--goldenrod);
-        transition: all 0.25s;
-        display: block;
-        position: relative;
-        width: 100%;
-        border-radius: 22px;
-        background-color: transparent;
-
-        img {
-          border-radius: 20px;
-        }
+      @media screen and (max-width: 768px) {
+        width: 200px;
+        height: 200px;
       }
     }
   }

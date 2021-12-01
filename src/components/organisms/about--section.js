@@ -33,10 +33,10 @@ const AboutSection = () => {
         <div className='about--pic'>
           <div className='wrapper'>
             <StaticImage
-              src='../../images/about-prog.svg'
+              src='../../images/PROFIL.png'
               alt='my profil'
-              width={380}
-              height={270}
+              width={300}
+              height={300}
             />
           </div>
         </div>

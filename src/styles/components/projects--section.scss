@@ -3,6 +3,38 @@
   flex-direction: column;
   align-items: center;
 
+  &--heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    white-space: nowrap;
+
+    &::before {
+      content: '';
+      display: block;
+      position: relative;
+      top: 0px;
+      width: 300px;
+      height: 1px;
+      margin-right: 20px;
+      background-color: var(--slate);
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: 0px;
+      width: 300px;
+      height: 1px;
+      margin-left: 20px;
+      background-color: var(--slate);
+    }
+  }
+
   &--grid {
     padding: 0px;
     margin: 50px 0px 0px;

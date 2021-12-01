@@ -11,13 +11,13 @@
   }
 
   &--name {
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(25px, 5vw, 80px);
     font-weight: var(--font-bold);
   }
 
   &--job {
     color: var(--goldenrod);
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(25px, 5vw, 80px);
     font-style: italic;
   }
 

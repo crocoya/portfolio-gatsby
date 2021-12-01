@@ -3,33 +3,21 @@ import { Link } from 'gatsby';
 
 // import icons
 import { FaLaptopCode } from 'react-icons/fa';
-import { FiMenu } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
 
 // import items
 import { MenuItems } from '../data/menuItems';
 
 export default function Menu() {
-  const [toggleMenu, setToggleMenu] = React.useState(false);
-  const [largeur, setLargeur] = React.useState(window.innerWidth);
+  const [open, setOpen] = React.useState(false);
 
-  const toggleNavSmallScreen = () => {
-    setToggleMenu(!toggleMenu);
+  const handleClick = () => {
+    setOpen(!open);
   };
 
-  React.useEffect(() => {
-    const changeWidth = () => {
-      setLargeur(window.innerWidth);
-
-      if (window.innerWidth > 768) {
-        setToggleMenu(false);
-      }
-    };
-
-    window.addEventListener('resize', changeWidth);
-    return () => {
-      window.removeEventListener('resize', changeWidth);
-    };
-  }, []);
+  const closeMenu = () => {
+    setOpen(false);
+  };
 
   return (
     <nav className='nav container'>
@@ -39,33 +27,18 @@ export default function Menu() {
           <span>Yassine</span> Tababi
         </h3>
       </div>
-      {(toggleMenu || largeur > 768) && (
-        <div className='mobile--content'>
-          <ul className='mobile--list'>
-            {MenuItems.map((item, i) => (
-              <li key={i} className='mobile--items'>
-                <Link to={item.url} className={item.cName}>
-                  {item.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-      {!toggleMenu && (
-        <ul className='nav--list'>
-          {MenuItems.map((item, i) => (
-            <li key={i} className='nav--items'>
-              <Link to={item.url} className={item.cName}>
-                {item.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
-      <div className='nav--mobile' onClick={toggleNavSmallScreen}>
-        <FiMenu />
-      </div>
+      <ul className={open ? 'nav--links active' : 'nav--links'}>
+        {MenuItems.map((item, i) => (
+          <li key={i} className='nav--items'>
+            <Link to={item.url} className={item.cName} onClick={closeMenu}>
+              {item.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <button className='nav--mobile' onClick={handleClick}>
+        {open ? <FiX /> : <FiMenu />}
+      </button>
     </nav>
   );
 }

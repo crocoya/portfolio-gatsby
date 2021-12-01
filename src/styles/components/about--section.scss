@@ -39,6 +39,20 @@
     align-items: center;
     gap: 50px;
 
+    @media screen and (max-width: 1149px) {
+      flex-direction: column-reverse;
+      text-align: justify;
+      text-align-last: center;
+      letter-spacing: -0.5px;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      text-align: justify;
+      text-align-last: center;
+      letter-spacing: -0.5px;
+    }
+
     .about--text {
       p {
         margin: 20px 0;

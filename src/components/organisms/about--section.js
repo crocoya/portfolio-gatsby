@@ -1,6 +1,5 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-
+import { StaticImage } from 'gatsby-plugin-image';
 import { ToolboxItems } from '../data/svgItems';
 
 const AboutSection = () => {
@@ -33,7 +32,7 @@ const AboutSection = () => {
         <div className='about--pic'>
           <div className='wrapper'>
             <StaticImage
-              src='../../images/PROFIL.png'
+              src='../../images/pp-yassine.png'
               alt='my profil'
               width={300}
               height={300}

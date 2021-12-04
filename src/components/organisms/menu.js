@@ -12,6 +12,13 @@ import { MenuItems } from '../data/menuItems';
 export default function Menu() {
   const [open, setOpen] = React.useState(false);
 
+  React.useEffect(() => {
+    window.addEventListener('scroll', function () {
+      var header = document.querySelector('nav');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+  }, []);
+
   const handleAnime = (e) => {
     e.preventDefault();
 
@@ -43,7 +50,7 @@ export default function Menu() {
   };
 
   return (
-    <nav className='nav container'>
+    <nav className='nav container sticky'>
       <div className='nav--logo'>
         <FaLaptopCode />
         <h3 className='fullname'>

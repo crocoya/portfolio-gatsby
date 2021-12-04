@@ -26,18 +26,16 @@ const AboutSection = () => {
             I recently started a mission to create a{' '}
             <a href='https://empowerwomen-nft.com'>website</a> by integrating
             functionalities related to the world of blockchain and NFTs for a
-            client based in Dubai.
+            client.
           </p>
         </div>
         <div className='about--pic'>
-          <div className='wrapper'>
-            <StaticImage
-              src='../../images/pp-yassine.png'
-              alt='my profil'
-              width={300}
-              height={300}
-            />
-          </div>
+          <StaticImage
+            src='../../images/pp-yassine.png'
+            alt='my profil'
+            width={300}
+            height={300}
+          />
         </div>
       </div>
       <div className='about--skills'>

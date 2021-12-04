@@ -31,9 +31,9 @@ export const ProjectsItems = [
     title: 'Empower Women Planet',
     link: 'https://empowerwomen-nft.com',
     description:
-      'My first project with the web3 library for a client based in dubai who wishes to initiate the sale of his NFTs thanks to the blockchain.',
+      'My first project with the web3 library for a client who wishes to initiate the sale of his NFTs thanks to the blockchain.',
     techList: {
-      techOne: 'Gatsby',
+      techOne: 'React',
       techTwo: 'SCSS',
       techThree: 'Web3',
     },

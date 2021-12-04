@@ -8,6 +8,10 @@
     margin: 10px 0px 40px;
     white-space: nowrap;
 
+    @media screen and (max-width: 1149px) {
+      margin-bottom: 50px;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -81,6 +85,7 @@
       height: 300px;
       overflow: hidden;
       box-shadow: 0 0 20px 5px var(--goldenrod);
+      z-index: 1;
 
       @media screen and (max-width: 768px) {
         width: 200px;

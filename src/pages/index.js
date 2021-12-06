@@ -12,6 +12,7 @@ import '../styles/index.scss';
 const IndexPage = () => {
   return (
     <Layout>
+      <title>Yassine Tababi | Crocoya</title>
       <HomeSection />
       <AboutSection />
       <ProjectsSection />

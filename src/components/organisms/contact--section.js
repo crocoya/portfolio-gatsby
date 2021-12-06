@@ -12,6 +12,7 @@ const ContactSection = () => {
           subject='Vous avez reçu un message'
           netlify-honeypot='bot-field'
           data-netlify='true'
+          action='https://getform.io/f/9d5b53e7-1b66-4ab6-9af4-72a8a529a284'
           name='contact'
         >
           <input type='hidden' name='bot-field' />

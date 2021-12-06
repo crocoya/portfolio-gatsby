@@ -1,0 +1,51 @@
+.main--notfound {
+  background: var(--dark);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .content--notfound {
+    h1 {
+      display: inline-block;
+      border-right: 1px solid var(--slate);
+      margin: 0 20px 0 0;
+      padding: 10px 23px 10px 0;
+      font-size: 24px;
+      font-weight: 500;
+      vertical-align: top;
+    }
+
+    div {
+      display: inline-block;
+      text-align: left;
+      line-height: 49px;
+      height: 49px;
+      vertical-align: middle;
+
+      h2 {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: inherit;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  a {
+    background-color: var(--navy-light);
+    border-radius: 20px;
+    margin: 20px 0 0 0;
+    padding: 20px;
+    font-size: 14px;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--goldenrod);
+      transition: var(--transition);
+    }
+  }
+}

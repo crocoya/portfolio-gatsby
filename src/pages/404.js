@@ -1,54 +1,66 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
 // styles
 const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+  background: 'var(--dark)',
+  height: '100vh',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  textAlign: 'center',
+};
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+const h1Styles = {
+  display: 'inline-block',
+  borderRight: '1px solid var(--slate)',
+  margin: '0 20px 0 0',
+  padding: '10px 23px 10px 0',
+  fontSize: '24px',
+  fontWeight: '500',
+  verticalAlign: 'top',
+};
+
+const h2Content = {
+  display: 'inline-block',
+  textAlign: 'left',
+  lineHeight: '49px',
+  height: '49px',
+  verticalAlign: 'middle',
+};
+
+const h2Styles = {
+  fontSize: '14px',
+  fontWeight: 'normal',
+  lineHeight: 'inherit',
+  margin: '0',
+  padding: '0',
+};
+
+const btnHome = {
+  backgroundColor: 'var(--navy-light)',
+  borderRadius: '20px',
+  margin: '20px 0 0 0',
+  padding: '20px',
+};
 
 // markup
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
       <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
+      <div>
+        <h1 style={h1Styles}>404</h1>
+        <div style={h2Content}>
+          <h2 style={h2Styles}>This page could not be found</h2>
+        </div>
+      </div>
+      <Link to='/' style={btnHome}>
+        Go home
+      </Link>
     </main>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;

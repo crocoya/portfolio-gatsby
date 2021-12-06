@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
-    title: 'Yassine Tababi',
+    siteUrl: 'https://yassine-tababi.netlify.app',
+    title: 'Yassine Tababi | Crocoya',
+    description:
+      "My name is Yassine and I enjoy creating things that live on the internet. I'm Developer Freelance !",
+    keywords: `web,site,developer,javascript,react,mobile,dev,firebase,web3,front-end`,
+    author: 'Crocoya',
   },
   plugins: [
     'gatsby-plugin-sass',

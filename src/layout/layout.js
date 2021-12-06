@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Menu from '../organisms/menu';
-import SocialLeft from '../organisms/social--left';
-import SocialRight from '../organisms/social--right';
-import Copyright from '../organisms/copyright';
+import Menu from '../components/organisms/menu';
+import SocialLeft from '../components/organisms/social--left';
+import SocialRight from '../components/organisms/social--right';
+import Copyright from '../components/organisms/copyright';
 
 const Layout = ({ children }) => {
   return (

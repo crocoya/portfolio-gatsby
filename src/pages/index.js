@@ -6,6 +6,7 @@ import HomeSection from '../components/organisms/home--section';
 import ProjectsSection from '../components/organisms/projects--section';
 
 // import style
+import 'atropos/atropos.css';
 import '../styles/index.scss';
 
 const IndexPage = () => {

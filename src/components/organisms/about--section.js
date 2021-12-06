@@ -1,6 +1,7 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { ToolboxItems } from '../data/svgItems';
+import { ToolboxItems } from '../molecules/svgItems';
+import Atropos from 'atropos/react';
 
 const AboutSection = () => {
   return (
@@ -16,9 +17,9 @@ const AboutSection = () => {
           </p>
           <p>
             Fast-forward to today, I had the opportunity to start training to
-            become a web developer at the
-            <a href='https://www.wildcodeschool.com/fr-FR'> Wild Code School</a>
-            , and I was able to acquire many skills. My goal today is to be able
+            become a web developer at the{' '}
+            <a href='https://www.wildcodeschool.com/fr-FR'>Wild Code School</a>,
+            and I was able to acquire many skills. My goal today is to be able
             to acquire a lot more skills in the field by offering my services as
             a freelance.
           </p>
@@ -43,10 +44,18 @@ const AboutSection = () => {
         <div className='toolbox--container'>
           <ul>
             {ToolboxItems.map((item, i) => (
-              <li key={i}>
-                <div>{item.icon}</div>
-                <span>{item.title}</span>
-              </li>
+              <Atropos
+                highlight={false}
+                shadow={false}
+                rotateTouch={false}
+                onEnter={() => console.log('enter')}
+                key={i}
+              >
+                <li data-atropos-offset='0'>
+                  <div data-atropos-offset='10'>{item.icon}</div>
+                  <span data-atropos-offset='-5'>{item.title}</span>
+                </li>
+              </Atropos>
             ))}
           </ul>
         </div>

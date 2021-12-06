@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectsItems } from '../data/projectsItems';
+import { ProjectsItems } from '../molecules/projectsItems';
 
 const ProjectsSection = () => {
   return (

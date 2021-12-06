@@ -4,26 +4,6 @@ import { FiFolder, FiGithub, FiLink } from 'react-icons/fi';
 export const ProjectsItems = [
   {
     folder: <FiFolder />,
-    github: {
-      link: 'https://github.com/crocoya/crocoya.fr',
-      icon: <FiGithub />,
-    },
-    site: {
-      link: 'https://www.crocoya.fr',
-      icon: <FiLink />,
-    },
-    title: 'Portfolio v1',
-    link: 'https://www.crocoya.fr',
-    description:
-      'My first portfolio, made during my training at the Wild Code School only in HTML CSS without framework to maximize SEO.',
-    techList: {
-      techOne: 'HTML',
-      techTwo: 'CSS',
-      techThree: 'JS',
-    },
-  },
-  {
-    folder: <FiFolder />,
     site: {
       link: 'https://empowerwomen-nft.com',
       icon: <FiLink />,
@@ -31,7 +11,7 @@ export const ProjectsItems = [
     title: 'Empower Women Planet',
     link: 'https://empowerwomen-nft.com',
     description:
-      'My first project with the web3 library for a client who wishes to initiate the sale of his NFTs thanks to the blockchain.',
+      'My last project with the web3 library for a client who wishes to initiate the sale of his NFTs thanks to the blockchain.',
     techList: {
       techOne: 'React',
       techTwo: 'SCSS',
@@ -72,6 +52,26 @@ export const ProjectsItems = [
       techOne: 'React',
       techTwo: 'CSS',
       techThree: 'MySQL',
+    },
+  },
+  {
+    folder: <FiFolder />,
+    github: {
+      link: 'https://github.com/crocoya/crocoya.fr',
+      icon: <FiGithub />,
+    },
+    site: {
+      link: 'https://www.crocoya.fr',
+      icon: <FiLink />,
+    },
+    title: 'Portfolio v1',
+    link: 'https://www.crocoya.fr',
+    description:
+      'My first portfolio, made during my training at the Wild Code School only in HTML CSS without framework to maximize SEO.',
+    techList: {
+      techOne: 'HTML',
+      techTwo: 'CSS',
+      techThree: 'JS',
     },
   },
 ];

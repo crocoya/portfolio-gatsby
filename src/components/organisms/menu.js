@@ -7,7 +7,7 @@ import { FaLaptopCode } from 'react-icons/fa';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 // import items
-import { MenuItems } from '../data/menuItems';
+import { MenuItems } from '../molecules/menuItems';
 
 export default function Menu() {
   const [open, setOpen] = React.useState(false);
@@ -54,7 +54,7 @@ export default function Menu() {
       <div className='nav--logo'>
         <FaLaptopCode />
         <h3 className='fullname'>
-          <span>Yassine</span> Tababi
+          <span>Croco</span>ya
         </h3>
       </div>
       <ul className={open ? 'nav--links active' : 'nav--links'}>

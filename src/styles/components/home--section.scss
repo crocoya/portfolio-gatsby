@@ -27,12 +27,24 @@
 
     span {
       color: var(--goldenrod);
-      transition: all 0.25s;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: var(--goldenrod);
+        left: 50%;
+        bottom: -2px;
+        transition: all 0.4s ease-in-out;
+      }
 
       &:hover {
-        transition: all 1s;
-        text-decoration: underline;
-        cursor: default;
+        &::after {
+          width: 100%;
+          left: 0%;
+        }
       }
     }
   }

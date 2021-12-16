@@ -18,16 +18,28 @@ const AboutSection = () => {
           <p>
             Fast-forward to today, I had the opportunity to start training to
             become a web developer at the{' '}
-            <a href='https://www.wildcodeschool.com/fr-FR'>Wild Code School</a>,
-            and I was able to acquire many skills. My goal today is to be able
+            <a
+              href='https://www.wildcodeschool.com/fr-FR'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Wild Code School
+            </a>
+            , and I was able to acquire many skills. My goal today is to be able
             to acquire a lot more skills in the field by offering my services as
             a freelance.
           </p>
           <p>
             I recently started a mission to create a{' '}
-            <a href='https://empowerwomen-nft.com'>website</a> by integrating
-            functionalities related to the world of blockchain and NFTs for a
-            client.
+            <a
+              href='https://empowerwomen-nft.com'
+              target='_blank'
+              rel='noreferrer'
+            >
+              website
+            </a>{' '}
+            by integrating functionalities related to the world of blockchain
+            and NFTs for a client.
           </p>
         </div>
         <div className='about--pic'>

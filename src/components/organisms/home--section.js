@@ -23,7 +23,12 @@ const HomeSection = () => {
         I am interested in blockchain by developing applications with{' '}
         <span>web3 library</span>.
       </p>
-      <a href='/#' className='home--cv' target='_blank' rel='noreferrer'>
+      <a
+        href='/cv/cv-yassine-tababi.pdf'
+        className='home--cv'
+        target='_blank'
+        rel='noreferrer'
+      >
         Resume
       </a>
     </section>

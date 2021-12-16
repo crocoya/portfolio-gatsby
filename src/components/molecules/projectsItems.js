@@ -11,7 +11,7 @@ export const ProjectsItems = [
     title: 'Empower Women Planet',
     link: 'https://empowerwomen-nft.com',
     description:
-      'My last project with the web3 library for a client who wishes to initiate the sale of his NFTs thanks to the blockchain.',
+      'For the realization of my last project, I was given the opportunity to work with a motivated team where I had to learn new technologies and a totally different world. Empower Women Planet is the first female NFT project that will integrate the metaverse.',
     techList: {
       techOne: 'React',
       techTwo: 'SCSS',

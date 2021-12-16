@@ -61,11 +61,11 @@ export const ProjectsItems = [
       icon: <FiGithub />,
     },
     site: {
-      link: 'https://www.crocoya.fr',
+      link: 'https://crocoya.netlify.app',
       icon: <FiLink />,
     },
     title: 'Portfolio v1',
-    link: 'https://www.crocoya.fr',
+    link: 'https://crocoya.netlify.app',
     description:
       'My first portfolio, made during my training at the Wild Code School only in HTML CSS without framework to maximize SEO.',
     techList: {

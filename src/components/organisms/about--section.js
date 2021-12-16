@@ -39,7 +39,7 @@ const AboutSection = () => {
               website
             </a>{' '}
             by integrating functionalities related to the world of blockchain
-            and NFTs for a client.
+            and NFTs.
           </p>
         </div>
         <div className='about--pic'>

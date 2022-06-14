@@ -24,7 +24,7 @@ const HomeSection = () => {
         <span>web3 library</span>.
       </p>
       <a
-        href='/cv/cv-yassine-tababi.pdf'
+        href='/cv/yassine-tababi-cv.pdf'
         className='home--cv'
         target='_blank'
         rel='noreferrer'

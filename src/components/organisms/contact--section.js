@@ -6,7 +6,9 @@ const ContactSection = () => {
     <section className='contact container' id='contact'>
       <h2 className='contact--heading'>Contact</h2>
       <Container className='contact--grid'>
-        <Typography variant='h6'>Say Hello !</Typography>
+        <Typography variant='h6' color='white'>
+          Say Hello !
+        </Typography>
         <form
           method='post'
           subject='Vous avez reçu un message'

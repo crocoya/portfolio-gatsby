@@ -54,7 +54,7 @@ export default function Menu() {
       <div className='nav--logo'>
         <FaLaptopCode />
         <h3 className='fullname'>
-          <span>Croco</span>ya
+          <span>Yassine </span>Tababi
         </h3>
       </div>
       <ul className={open ? 'nav--links active' : 'nav--links'}>

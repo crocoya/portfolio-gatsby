@@ -56,8 +56,9 @@
         height: 100%;
         padding: 2rem 1.75rem;
         border-radius: 10px;
-        background-color: var(--navy-light);
+        background-color: var(--bluerod);
         transition: var(--transition);
+        color: var(--white);
 
         &:hover {
           transform: scale(1.02);
@@ -75,7 +76,7 @@
               svg {
                 width: 40px;
                 height: 40px;
-                color: var(--goldenrod);
+                color: var(--white);
               }
             }
 
@@ -83,6 +84,7 @@
               display: flex;
               align-items: center;
               margin-right: -10px;
+              color: var(--dark);
 
               a {
                 display: flex;
@@ -93,7 +95,7 @@
                 &:hover {
                   transform: scale(1.05);
                   transition: var(--transition);
-                  color: var(--goldenrod);
+                  color: var(--white);
                 }
 
                 svg {
@@ -107,10 +109,11 @@
           .project--title {
             margin: 0px 0px 10px;
             font-size: var(--h3-fz);
+            color: var(--dark);
 
             &:hover {
               transition: var(--transition);
-              color: var(--goldenrod);
+              color: var(--white);
             }
           }
 
@@ -127,6 +130,7 @@
             flex-wrap: wrap;
             padding: 0px;
             margin: 20px 0px 0px;
+            color: var(--dark);
 
             li:not(:last-of-type) {
               margin-right: 15px;

@@ -8,12 +8,13 @@
   --font-bold: 700;
   /* ===== Colors ===== */
   --dark: #001514;
-  --white: #fbfffe;
+  --white: #f1faee;
   --slate: #a3a4a6;
   --navy-light: #022220;
   --blood-red: #6b0604;
   --chinese-red: #a3320b;
   --goldenrod: #e6af2e;
+  --bluerod: #10618a;
   /* ===== Font and typography ===== */
   --body-font: 'Poppins', sans-serif;
   --h1-fz: 1.5rem;
@@ -46,8 +47,8 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-fz);
   font-weight: var(--font-normal);
-  background-color: var(--dark);
-  color: var(--slate);
+  background-color: var(--white);
+  color: var(--dark);
   cursor: default;
 }
 
